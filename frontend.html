@@ -1,363 +1,273 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consulta de Usuários RJ</title>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <base href="/">
+    <title>Análise de Clientes</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+            background-color: #f8f9fa;
+        }
+
+        .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
-            background-color: #f5f5f5;
         }
+
         h1 {
             color: #2c3e50;
             text-align: center;
             margin-bottom: 30px;
+            font-size: 2.5em;
         }
-        .dashboard {
+
+        .botoes {
             display: grid;
-            grid-template-columns: 1fr 2fr;
-            gap: 20px;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            margin-bottom: 20px;
         }
-        .panel {
-            background: white;
-            border-radius: 8px;
-            padding: 20px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        .chart-container {
-            height: 400px;
-            margin-top: 20px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 15px;
-            font-size: 14px;
-        }
-        th, td {
-            padding: 12px 15px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
-        }
-        th {
-            background-color: #3498db;
-            color: white;
-        }
-        tr:hover {
-            background-color: #f5f5f5;
-        }
-        .form-group {
-            margin-bottom: 15px;
-        }
-        label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-            color: #2c3e50;
-        }
-        input, select, button {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            font-size: 14px;
-        }
+
         button {
+            padding: 12px 20px;
             background-color: #3498db;
             color: white;
             border: none;
+            border-radius: 8px;
             cursor: pointer;
-            font-weight: bold;
-            margin-top: 5px;
-            transition: background-color 0.3s;
+            transition: all 0.3s ease;
+            font-size: 1em;
         }
+
         button:hover {
             background-color: #2980b9;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
-        .loading {
+
+        .imagem-container {
+            text-align: center;
+            margin: 30px 0;
+            min-height: 400px;
+        }
+
+        .imagem-container img {
+            max-width: 90%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .tabela-container {
+            margin-top: 30px;
+            overflow-x: auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            padding: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            white-space: nowrap;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ececec;
+            font-size: 0.95em;
+        }
+
+        th {
+            background-color: #3498db;
+            color: white;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.9em;
+        }
+
+        tr:hover {
+            background-color: #f8f9fa;
+        }
+
+        .status {
             text-align: center;
             padding: 20px;
-            color: #555;
+            color: #666;
+            font-style: italic;
         }
-        .loading-spinner {
-            border: 4px solid #f3f3f3;
-            border-top: 4px solid #3498db;
-            border-radius: 50%;
-            width: 30px;
-            height: 30px;
-            animation: spin 1s linear infinite;
-            margin: 0 auto 15px;
-        }
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-        .error {
-            color: #e74c3c;
+
+        .erro {
+            color: #dc3545;
+            background-color: #f8d7da;
+            border: 1px solid #f5c6cb;
+            border-radius: 5px;
             padding: 15px;
-            background-color: #fadbd8;
-            border-radius: 4px;
-            margin-top: 10px;
-            text-align: center;
+            margin: 20px 0;
         }
-        .error button {
-            background-color: #e74c3c;
-            margin-top: 10px;
+
+        .erro ul {
+            margin: 10px 0 0 20px;
         }
-        .table-container {
-            overflow-x: auto;
-        }
-        .summary {
-            margin-top: 10px;
-            font-weight: bold;
-            text-align: right;
-            color: #2c3e50;
+
+        @media (max-width: 768px) {
+            .botoes {
+                grid-template-columns: 1fr;
+            }
+            
+            button {
+                width: 100%;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Consulta de Usuários RJ</h1>
-    
-    <div class="dashboard">
-        <div class="panel">
-            <h2>Consultas</h2>
-            
-            <div class="form-group">
-                <button id="btnTodos">Mostrar Todos os Usuários</button>
-            </div>
-            
-            <div class="form-group">
-                <label for="localidade">Filtrar por Localidade:</label>
-                <select id="localidade">
-                    <option value="">Selecione uma localidade...</option>
-                </select>
-                <button id="btnLocalidade">Filtrar</button>
-            </div>
-            
-            <div class="form-group">
-                <label for="nome">Buscar por Nome:</label>
-                <input type="text" id="nome" placeholder="Digite parte do nome">
-                <button id="btnNome">Buscar</button>
-            </div>
-            
-            <div id="resultado">
-                <div class="loading">
-                    <div class="loading-spinner"></div>
-                    <p>Carregando interface...</p>
-                </div>
-            </div>
-        </div>
+    <div class="container">
+        <h1>📊 Análise de Clientes</h1>
         
-        <div class="panel">
-            <h2>Distribuição por Localidade</h2>
-            <div class="chart-container">
-                <canvas id="histogramaChart"></canvas>
-            </div>
+        <div class="botoes">
+            <button onclick="carregarImagem('clusterizacao')">🔍 Clusterização</button>
+            <button onclick="carregarImagem('clv')">💰 CLV</button>
+            <button onclick="carregarImagem('conjoint')">📈 Conjoint</button>
+            <button onclick="carregarImagem('previsao')">🔮 Previsão</button>
+            <button onclick="carregarCSV()">📂 Carregar Dados</button>
+        </div>
+
+        <div class="imagem-container" id="imagemContainer">
+            <div class="status">Selecione uma visualização acima</div>
+        </div>
+
+        <div class="tabela-container" id="tabelaContainer">
+            <div class="status">Clique em "Carregar Dados" para ver as informações</div>
         </div>
     </div>
 
     <script>
-        // Configurações globais
-        const API_URL = window.location.origin;
-        let chart;
+        // Configuração de caminhos absolutos
+        const BASE_URL = window.location.origin;
         
-        // Inicialização quando o DOM estiver pronto
-        document.addEventListener('DOMContentLoaded', () => {
-            initializeChart();
-            loadInitialData();
-            setupEventListeners();
-        });
-
-        function initializeChart() {
-            const ctx = document.getElementById('histogramaChart').getContext('2d');
-            chart = new Chart(ctx, {
-                type: 'bar',
-                data: {
-                    labels: [],
-                    datasets: [{
-                        label: 'Usuários por Localidade',
-                        data: [],
-                        backgroundColor: 'rgba(52, 152, 219, 0.7)',
-                        borderColor: 'rgba(52, 152, 219, 1)',
-                        borderWidth: 1
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    plugins: {
-                        legend: {
-                            display: false
-                        }
-                    },
-                    scales: {
-                        y: {
-                            beginAtZero: true,
-                            ticks: {
-                                precision: 0
-                            }
-                        }
-                    }
+        async function carregarCSV() {
+            const container = document.getElementById('tabelaContainer');
+            try {
+                container.innerHTML = '<div class="status">Carregando dados...</div>';
+                
+                // URL absoluta com cache busting
+                const csvUrl = `${BASE_URL}/aula05-dados_clientes.csv?t=${Date.now()}`;
+                const response = await fetch(csvUrl);
+                
+                if (!response.ok) {
+                    throw new Error(`Erro ${response.status}: ${response.statusText}`);
                 }
-            });
-        }
 
-        async function loadInitialData() {
-            try {
-                showLoading('Carregando dados iniciais...');
+                // Decodificação segura
+                const buffer = await response.arrayBuffer();
+                const decoder = new TextDecoder('utf-8');
+                const csvData = decoder.decode(buffer).replace(/^\uFEFF/, '');
+
+                // Processamento do CSV
+                const linhas = csvData.split(/\r?\n/).filter(line => line.trim());
+                if (linhas.length < 2) throw new Error('CSV inválido');
+
+                const headers = linhas[0].split(',').map(h => h.trim());
+                const expectedHeaders = [
+                    'cliente_id', 'idade', 'renda_anual', 'frequencia_compras',
+                    'valor_medio_compra', 'preferencia_frete_gratis',
+                    'satisfacao_qualidade', 'total_gasto'
+                ];
+
+                if (!arraysIguais(headers, expectedHeaders)) {
+                    throw new Error('Cabeçalhos do CSV não correspondem');
+                }
+
+                // Construção da tabela
+                const table = document.createElement('table');
                 
-                // Carrega dados do histograma
-                const response = await fetch(`${API_URL}/histograma-data`);
-                if (!response.ok) throw new Error('Erro ao carregar dados');
-                
-                const data = await response.json();
-                updateChart(data);
-                populateLocationDropdown(data);
-                
-                showContentReady();
-            } catch (error) {
-                showError(`Falha ao carregar: ${error.message}`);
-                console.error("Erro:", error);
-            }
-        }
-
-        function setupEventListeners() {
-            document.getElementById('btnTodos').addEventListener('click', loadAllUsers);
-            document.getElementById('btnLocalidade').addEventListener('click', filterByLocation);
-            document.getElementById('btnNome').addEventListener('click', searchByName);
-        }
-
-        async function loadAllUsers() {
-            try {
-                showLoading('Carregando todos os usuários...');
-                const response = await fetch(`${API_URL}/usuarios`);
-                if (!response.ok) throw new Error('Erro na requisição');
-                
-                const data = await response.json();
-                displayUsers(data);
-            } catch (error) {
-                showError(error.message);
-            }
-        }
-
-        async function filterByLocation() {
-            const location = document.getElementById('localidade').value;
-            if (!location) return showError('Selecione uma localidade');
-            
-            try {
-                showLoading(`Filtrando por ${location.split(' ')[0]}...`);
-                const response = await fetch(`${API_URL}/localidade/${encodeURIComponent(location.split(' ')[0])}`);
-                if (!response.ok) throw new Error('Localidade não encontrada');
-                
-                const data = await response.json();
-                displayUsers(data);
-            } catch (error) {
-                showError(error.message);
-            }
-        }
-
-        async function searchByName() {
-            const name = document.getElementById('nome').value.trim();
-            if (!name) return showError('Digite um nome para buscar');
-            
-            try {
-                showLoading(`Buscando por "${name}"...`);
-                const response = await fetch(`${API_URL}/buscar?nome=${encodeURIComponent(name)}`);
-                if (!response.ok) throw new Error('Busca falhou');
-                
-                const data = await response.json();
-                displayUsers(data);
-            } catch (error) {
-                showError(error.message);
-            }
-        }
-
-        // Funções auxiliares
-        function updateChart(data) {
-            chart.data.labels = Object.keys(data);
-            chart.data.datasets[0].data = Object.values(data);
-            chart.update();
-        }
-
-        function populateLocationDropdown(data) {
-            const select = document.getElementById('localidade');
-            select.innerHTML = '<option value="">Selecione uma localidade...</option>';
-            
-            Object.entries(data)
-                .sort((a, b) => b[1] - a[1])
-                .forEach(([location, count]) => {
-                    const option = document.createElement('option');
-                    option.value = `${location} (${count})`;
-                    option.textContent = `${location} (${count} usuários)`;
-                    select.appendChild(option);
+                // Cabeçalho
+                const thead = table.createTHead();
+                const headerRow = thead.insertRow();
+                headers.forEach(header => {
+                    const th = document.createElement('th');
+                    th.textContent = header;
+                    headerRow.appendChild(th);
                 });
-        }
 
-        function displayUsers(users) {
-            const container = document.getElementById('resultado');
-            
-            if (!users || users.length === 0) {
-                container.innerHTML = '<div class="error">Nenhum usuário encontrado</div>';
-                return;
+                // Dados
+                const tbody = table.createTBody();
+                for (let i = 1; i < linhas.length; i++) {
+                    const cells = linhas[i].split(',').map(c => c.trim());
+                    if (cells.length !== headers.length) continue;
+
+                    const row = tbody.insertRow();
+                    cells.forEach((cell, index) => {
+                        const td = row.insertCell();
+                        td.innerHTML = formatarCelula(cell, headers[index]);
+                    });
+                }
+
+                container.innerHTML = '';
+                container.appendChild(table);
+
+            } catch (error) {
+                console.error('Erro:', error);
+                container.innerHTML = `
+                    <div class="erro">
+                        <strong>Erro ao carregar dados:</strong> ${error.message}
+                        <br><br>
+                        <button onclick="location.reload()">↻ Tentar novamente</button>
+                    </div>
+                `;
             }
-
-            const html = `
-                <div class="table-container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Nome</th>
-                                <th>Localidade</th>
-                                <th>Telefone</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            ${users.map(user => `
-                                <tr>
-                                    <td>${user.nome}</td>
-                                    <td>${user.localidade}</td>
-                                    <td>${user.telefone}</td>
-                                </tr>
-                            `).join('')}
-                        </tbody>
-                    </table>
-                    <div class="summary">Total: ${users.length} usuários</div>
-                </div>
-            `;
-            
-            container.innerHTML = html;
         }
 
-        function showLoading(message) {
-            document.getElementById('resultado').innerHTML = `
-                <div class="loading">
-                    <div class="loading-spinner"></div>
-                    <p>${message}</p>
-                </div>
-            `;
+        function formatarCelula(valor, cabecalho) {
+            try {
+                const formatadores = {
+                    'cliente_id': v => `#${v.padStart(4, '0')}`,
+                    'idade': v => `${v} anos`,
+                    'renda_anual': v => new Intl.NumberFormat('pt-BR', {
+                        style: 'currency',
+                        currency: 'BRL'
+                    }).format(v),
+                    'satisfacao_qualidade': v => `${parseFloat(v).toFixed(1)} ⭐`,
+                    'preferencia_frete_gratis': v => v === '1' ? '✅ Sim' : '❌ Não'
+                };
+                return formatadores[cabecalho]?.(valor) || valor;
+            } catch (error) {
+                return `<span style="color:red">${valor}</span>`;
+            }
         }
 
-        function showContentReady() {
-            document.getElementById('resultado').innerHTML = `
-                <div class="loading">
-                    <p>Selecione uma opção para carregar os dados</p>
-                </div>
-            `;
+        function arraysIguais(a, b) {
+            return a.length === b.length && a.every((v, i) => v === b[i]);
         }
 
-        function showError(message) {
-            document.getElementById('resultado').innerHTML = `
-                <div class="error">
-                    <p>${message}</p>
-                    <button onclick="location.reload()">Tentar novamente</button>
-                </div>
-            `;
-        }
+		function carregarImagem(tipo) {
+			const container = document.getElementById('imagemContainer');
+			const imgUrl = `${tipo}.png?t=${Date.now()}`; // Usando caminho relativo
+
+			container.innerHTML = `
+				<div class="status">Carregando ${tipo.replace(/_/g, ' ')}...</div>
+				<img src="${imgUrl}" 
+					 alt="${tipo}" 
+					 onload="this.previousElementSibling.remove()"
+					 onerror="handleImageError(this, '${tipo}')"
+					 style="max-width: 100%; display: block; margin: 0 auto;">
+			`;
+		}
+
+		function handleImageError(img, tipo) {
+			img.parentElement.innerHTML = `
+				<div class="erro">
+					❌ Falha ao carregar "${tipo}"<br>
+					<small>Verifique se o arquivo ${tipo}.png existe</small>
+				</div>
+			`;
+		}		
     </script>
 </body>
 </html>
