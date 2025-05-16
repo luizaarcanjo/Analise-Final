@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "builds": [{"src": "/*", "use": "@vercel/static"}],
+  "routes": [
+    {
+      "src": "/(.*\\.(csv|png))",
+      "headers": {
+        "Content-Type": "text/csv; charset=utf-8",
+        "Cache-Control": "no-cache"
+      }
+    },
+    {"src": "/.*", "dest": "/index.html"}
+  ]
+}
