@@ -1,0 +1,1001 @@
+cliente_id,idade,renda_mensal,cidade,tipo_cliente,ultima_compra,frequencia_compras,total_gasto
+1,56,2590,Curitiba,ocasional,63,12,6779
+2,69,5305,Manaus,frequente,104,4,7310
+3,46,3865,Porto Alegre,frequente,339,8,4170
+4,32,2866,Porto Alegre,ocasional,359,7,4619
+5,60,4030,Porto Alegre,premium,156,7,3869
+6,25,3377,Manaus,ocasional,273,8,5573
+7,38,7530,Fortaleza,ocasional,6,9,6687
+8,56,6322,Salvador,frequente,147,14,2385
+9,36,4988,Belo Horizonte,frequente,184,12,5614
+10,40,7219,Manaus,ocasional,28,9,4584
+11,28,5116,Curitiba,ocasional,38,9,5170
+12,28,3708,Salvador,ocasional,119,12,5688
+13,41,7284,Curitiba,ocasional,293,6,4717
+14,53,5808,Salvador,frequente,244,7,4844
+15,57,3444,Fortaleza,ocasional,68,12,4679
+16,41,4714,Recife,ocasional,214,9,6455
+17,20,3686,Curitiba,ocasional,218,11,5628
+18,39,2925,Manaus,ocasional,177,6,5330
+19,19,6389,Salvador,ocasional,299,10,3093
+20,41,7864,Porto Alegre,frequente,164,7,4432
+21,61,2902,Brasília,premium,58,13,6348
+22,47,5844,Porto Alegre,frequente,269,7,5056
+23,55,4024,São Paulo,ocasional,308,11,5989
+24,19,4269,Recife,frequente,58,12,7649
+25,38,4111,Recife,frequente,288,10,6557
+26,50,3704,Porto Alegre,frequente,105,8,5139
+27,29,5072,Belo Horizonte,ocasional,228,11,4233
+28,39,3753,Fortaleza,ocasional,247,8,1169
+29,61,5405,Curitiba,ocasional,188,10,4747
+30,42,4924,Manaus,ocasional,83,12,4510
+31,66,4641,Recife,ocasional,186,6,5585
+32,44,3638,Porto Alegre,ocasional,252,5,4769
+33,59,4134,Porto Alegre,ocasional,355,10,4519
+34,45,6133,Fortaleza,frequente,238,10,2330
+35,33,5751,Fortaleza,ocasional,360,7,3590
+36,32,3533,Rio de Janeiro,ocasional,184,14,5714
+37,64,5148,Rio de Janeiro,premium,284,13,7573
+38,68,6127,Belo Horizonte,premium,210,11,4853
+39,61,2495,Belo Horizonte,frequente,304,8,5491
+40,69,5815,São Paulo,premium,296,7,6428
+41,20,4006,Belo Horizonte,ocasional,97,10,3783
+42,54,5855,Salvador,premium,208,9,5550
+43,68,3855,Fortaleza,ocasional,137,5,3889
+44,24,2292,Manaus,ocasional,184,6,6297
+45,38,2558,Salvador,ocasional,76,7,5227
+46,26,5072,Curitiba,ocasional,287,9,5447
+47,56,5389,Porto Alegre,ocasional,142,16,3826
+48,35,3643,Belo Horizonte,frequente,237,10,6060
+49,21,5957,Porto Alegre,frequente,25,12,8127
+50,42,2507,Recife,ocasional,290,12,3488
+51,31,4900,São Paulo,ocasional,67,14,4490
+52,67,3183,Recife,frequente,250,7,5347
+53,26,4022,São Paulo,frequente,118,10,6179
+54,43,5071,Rio de Janeiro,ocasional,73,7,4160
+55,19,3709,Porto Alegre,frequente,282,13,750
+56,37,4423,São Paulo,ocasional,360,9,7038
+57,45,6509,Brasília,ocasional,10,16,6140
+58,64,4134,Salvador,premium,211,9,2385
+59,24,6253,São Paulo,ocasional,323,12,4088
+60,61,3305,São Paulo,ocasional,152,11,7352
+61,25,5794,Salvador,frequente,5,10,7171
+62,64,7162,Porto Alegre,frequente,195,9,6407
+63,52,1292,Porto Alegre,ocasional,283,12,4735
+64,31,3804,Salvador,ocasional,113,9,5124
+65,34,5865,Recife,ocasional,271,7,4803
+66,53,4695,Brasília,frequente,163,15,6692
+67,67,5556,Manaus,ocasional,105,14,3686
+68,57,4094,Curitiba,ocasional,181,17,3791
+69,21,5129,Brasília,premium,44,8,6515
+70,19,4766,Porto Alegre,ocasional,282,10,4933
+71,23,6751,Manaus,ocasional,175,7,7067
+72,59,5381,Rio de Janeiro,ocasional,162,8,3992
+73,21,5506,Belo Horizonte,frequente,351,6,4917
+74,46,4382,São Paulo,ocasional,340,8,3616
+75,35,4268,Salvador,ocasional,140,11,5011
+76,43,4351,Salvador,frequente,132,6,2782
+77,61,5591,São Paulo,ocasional,87,8,4268
+78,51,4368,Belo Horizonte,ocasional,176,17,2845
+79,27,5434,Curitiba,ocasional,183,14,6040
+80,53,8113,Belo Horizonte,ocasional,129,12,6074
+81,31,6306,Manaus,ocasional,246,12,2404
+82,48,4510,Belo Horizonte,ocasional,89,14,7000
+83,65,6801,Manaus,ocasional,66,10,8746
+84,32,4387,Belo Horizonte,ocasional,158,9,5069
+85,25,1942,Curitiba,frequente,149,14,4038
+86,31,3487,Curitiba,premium,340,7,9236
+87,40,2193,Porto Alegre,frequente,116,10,3021
+88,57,4472,São Paulo,frequente,214,10,5030
+89,38,5027,Curitiba,ocasional,294,12,5269
+90,33,7514,Manaus,premium,253,9,7017
+91,62,5490,Curitiba,ocasional,143,12,5539
+92,35,4671,Porto Alegre,premium,250,9,4252
+93,64,6244,Salvador,premium,302,12,3573
+94,41,1683,Manaus,frequente,25,8,4487
+95,43,5353,Porto Alegre,premium,277,16,3489
+96,42,6156,Recife,ocasional,70,13,5071
+97,62,2782,Recife,ocasional,113,6,4153
+98,58,6715,Rio de Janeiro,ocasional,363,9,2758
+99,46,5507,Belo Horizonte,ocasional,112,8,6882
+100,32,4377,São Paulo,ocasional,364,9,4253
+101,62,5949,Fortaleza,frequente,303,10,3097
+102,18,8406,Brasília,premium,91,7,4747
+103,42,5272,Porto Alegre,ocasional,18,12,5102
+104,24,5372,Salvador,frequente,149,9,2380
+105,26,4310,Brasília,premium,227,13,5497
+106,41,3725,Salvador,premium,214,13,3429
+107,18,6245,Brasília,premium,360,9,7566
+108,61,3715,Porto Alegre,ocasional,151,7,5785
+109,25,5107,Fortaleza,premium,192,10,4400
+110,41,4283,Brasília,frequente,40,9,3882
+111,28,5718,Porto Alegre,ocasional,242,8,4842
+112,68,5500,Curitiba,ocasional,138,7,5919
+113,34,6556,Fortaleza,frequente,345,7,4961
+114,25,4234,Manaus,ocasional,180,12,4674
+115,52,4595,Salvador,frequente,200,6,5087
+116,52,3531,Recife,frequente,203,9,4094
+117,50,4333,Belo Horizonte,ocasional,61,10,4485
+118,22,5565,Recife,ocasional,192,9,1871
+119,59,6135,Fortaleza,frequente,5,12,6460
+120,56,3616,Manaus,ocasional,237,7,5448
+121,58,6304,Salvador,ocasional,181,7,3839
+122,45,7033,Manaus,ocasional,311,9,7848
+123,24,5620,Brasília,ocasional,37,8,5130
+124,26,7815,Salvador,premium,56,12,3445
+125,25,3839,Brasília,ocasional,237,13,6285
+126,29,3133,Porto Alegre,frequente,358,14,5597
+127,51,2331,Fortaleza,ocasional,349,12,5591
+128,50,7244,Porto Alegre,ocasional,197,8,4361
+129,65,5981,Rio de Janeiro,frequente,73,7,5675
+130,40,4916,Manaus,frequente,59,4,4607
+131,41,5419,Brasília,ocasional,240,10,5833
+132,54,3311,Curitiba,ocasional,2,9,2142
+133,52,8668,Porto Alegre,ocasional,360,10,4349
+134,61,5193,Rio de Janeiro,ocasional,188,4,7583
+135,57,5164,São Paulo,frequente,307,8,3849
+136,39,6088,Recife,ocasional,30,6,4094
+137,44,5721,Salvador,ocasional,267,6,4328
+138,52,5335,Rio de Janeiro,ocasional,108,15,3177
+139,18,3814,Fortaleza,premium,332,13,1687
+140,52,5707,Porto Alegre,premium,90,15,4654
+141,54,7823,Fortaleza,ocasional,205,8,5203
+142,64,7018,Recife,frequente,220,9,4921
+143,31,7389,Curitiba,ocasional,94,10,4782
+144,20,4233,Manaus,ocasional,103,12,5064
+145,18,3515,Manaus,frequente,223,8,6534
+146,22,4811,Fortaleza,premium,186,11,4714
+147,43,5083,Brasília,premium,184,10,4138
+148,31,6641,Curitiba,ocasional,162,9,4578
+149,56,2461,Manaus,ocasional,247,8,5869
+150,44,7294,Curitiba,frequente,31,6,7118
+151,26,4762,Rio de Janeiro,ocasional,52,17,4057
+152,32,4359,Curitiba,ocasional,345,13,5148
+153,32,3481,Belo Horizonte,ocasional,76,13,5507
+154,43,2517,Recife,frequente,278,11,3511
+155,59,6234,Manaus,ocasional,40,11,5030
+156,30,5109,Curitiba,ocasional,101,4,2801
+157,68,3065,Fortaleza,premium,111,8,2346
+158,49,3057,São Paulo,ocasional,321,9,5550
+159,56,4496,Belo Horizonte,ocasional,249,11,4424
+160,66,7503,Belo Horizonte,ocasional,191,9,5303
+161,69,4610,Brasília,ocasional,182,7,4973
+162,49,2745,Curitiba,ocasional,335,8,3535
+163,21,4631,Brasília,ocasional,209,11,4932
+164,47,4590,Brasília,frequente,22,9,3150
+165,54,954,São Paulo,ocasional,166,7,7086
+166,40,4918,Rio de Janeiro,premium,99,13,2966
+167,56,4653,Curitiba,ocasional,208,8,4706
+168,62,6044,Porto Alegre,ocasional,8,8,3436
+169,32,7773,Manaus,ocasional,190,11,5855
+170,60,6689,Brasília,ocasional,175,9,4502
+171,46,4596,Recife,frequente,273,6,4221
+172,53,3340,Salvador,ocasional,17,6,6279
+173,30,8860,Recife,ocasional,90,16,5044
+174,49,5088,São Paulo,frequente,141,19,5774
+175,24,5020,São Paulo,premium,145,12,3528
+176,68,4963,Fortaleza,frequente,166,14,2892
+177,39,5297,Rio de Janeiro,ocasional,337,10,5160
+178,45,4783,Manaus,frequente,78,8,4521
+179,19,4139,Brasília,ocasional,262,13,5939
+180,59,4179,Recife,ocasional,163,17,4880
+181,62,4950,Salvador,ocasional,14,3,5307
+182,23,4184,São Paulo,ocasional,239,10,2564
+183,45,3930,São Paulo,ocasional,72,9,7832
+184,45,5159,Rio de Janeiro,ocasional,143,18,4753
+185,61,4617,Salvador,frequente,310,10,6046
+186,61,7255,Salvador,ocasional,283,15,3745
+187,37,1023,Rio de Janeiro,ocasional,269,8,5462
+188,47,6637,São Paulo,ocasional,241,14,3045
+189,28,6869,Manaus,premium,245,11,5678
+190,45,1889,Curitiba,ocasional,163,9,4466
+191,42,4485,Curitiba,ocasional,60,9,5043
+192,56,4442,Rio de Janeiro,frequente,6,9,6046
+193,50,2888,Salvador,frequente,197,9,3151
+194,18,3833,Brasília,ocasional,58,7,3973
+195,44,3334,Rio de Janeiro,frequente,305,10,5685
+196,69,7628,Manaus,frequente,217,8,8147
+197,30,6403,Rio de Janeiro,frequente,26,10,4792
+198,58,6907,Belo Horizonte,ocasional,303,17,5886
+199,20,6082,Recife,frequente,5,10,4839
+200,56,3306,Salvador,ocasional,20,10,7913
+201,23,4213,Fortaleza,ocasional,198,7,2379
+202,25,5734,Fortaleza,ocasional,59,6,5141
+203,44,3166,Salvador,ocasional,242,10,2561
+204,26,6069,Manaus,ocasional,146,12,1240
+205,54,4639,Belo Horizonte,frequente,273,12,5446
+206,50,4437,Belo Horizonte,ocasional,249,8,5209
+207,68,6066,São Paulo,ocasional,14,5,4572
+208,59,5666,Recife,ocasional,13,13,4840
+209,61,4458,Curitiba,ocasional,44,9,9647
+210,41,6738,Porto Alegre,premium,19,14,4612
+211,32,3378,Manaus,ocasional,63,14,5765
+212,49,5923,Porto Alegre,ocasional,239,7,4025
+213,49,5889,Porto Alegre,ocasional,337,10,5442
+214,41,4535,Salvador,ocasional,100,7,4642
+215,58,5489,Fortaleza,ocasional,163,12,4384
+216,69,3123,Fortaleza,frequente,122,17,7728
+217,66,6386,Curitiba,premium,44,16,6765
+218,66,4722,Salvador,ocasional,360,7,5205
+219,69,4215,Porto Alegre,frequente,317,12,1543
+220,29,6573,Brasília,frequente,145,8,4458
+221,56,3943,Fortaleza,frequente,327,11,9054
+222,19,2887,Manaus,ocasional,363,6,4654
+223,20,2665,Manaus,ocasional,50,13,6654
+224,66,5909,São Paulo,ocasional,65,7,7162
+225,54,3079,Rio de Janeiro,frequente,355,11,5328
+226,66,7632,Brasília,frequente,288,10,3737
+227,34,1877,Fortaleza,ocasional,164,8,1347
+228,66,7544,Belo Horizonte,ocasional,141,7,6026
+229,19,5316,Fortaleza,premium,314,7,3777
+230,19,4854,São Paulo,frequente,128,9,5264
+231,45,4182,Manaus,premium,239,9,3125
+232,40,5598,Porto Alegre,frequente,324,10,4602
+233,54,4943,Belo Horizonte,ocasional,296,10,5050
+234,49,6654,Salvador,ocasional,187,12,5402
+235,50,5171,Recife,frequente,208,10,3327
+236,18,5225,Porto Alegre,ocasional,220,15,6795
+237,36,4454,Recife,ocasional,190,10,4104
+238,19,4914,Brasília,frequente,346,10,2488
+239,61,5461,Rio de Janeiro,ocasional,284,11,4836
+240,43,2434,Belo Horizonte,frequente,352,10,5051
+241,49,2977,Curitiba,ocasional,237,4,5240
+242,23,6114,Belo Horizonte,premium,194,14,7043
+243,49,5256,Fortaleza,ocasional,287,7,4645
+244,21,4724,Manaus,ocasional,259,13,4820
+245,28,5027,Fortaleza,frequente,246,11,3345
+246,34,5521,Fortaleza,ocasional,136,2,6230
+247,55,4190,Brasília,frequente,280,14,5276
+248,41,3832,Porto Alegre,frequente,271,3,4369
+249,22,5293,Curitiba,ocasional,171,14,2142
+250,69,3532,Curitiba,ocasional,159,9,7166
+251,51,5612,Fortaleza,ocasional,201,9,3158
+252,23,2446,Recife,ocasional,45,11,4113
+253,39,6543,Brasília,premium,264,8,5537
+254,28,5708,Fortaleza,frequente,71,9,3205
+255,65,5384,Rio de Janeiro,frequente,364,11,2759
+256,33,6474,Manaus,frequente,103,8,1814
+257,50,7498,Porto Alegre,ocasional,125,10,6081
+258,26,6521,Salvador,premium,313,13,4182
+259,23,2238,Rio de Janeiro,frequente,286,15,9390
+260,33,3080,Recife,frequente,230,10,3508
+261,46,4062,Belo Horizonte,frequente,146,8,3617
+262,20,5039,Belo Horizonte,ocasional,197,11,4151
+263,37,5776,Rio de Janeiro,frequente,221,5,5364
+264,53,3911,Fortaleza,ocasional,60,18,4294
+265,36,5280,Salvador,ocasional,98,11,5918
+266,43,3866,São Paulo,ocasional,171,11,3532
+267,20,4082,São Paulo,premium,173,11,2927
+268,36,2890,Recife,frequente,151,9,2302
+269,37,3615,Fortaleza,frequente,350,11,1664
+270,49,2972,Curitiba,frequente,122,8,4222
+271,24,3536,Curitiba,ocasional,108,12,4548
+272,69,6580,Porto Alegre,premium,4,7,4052
+273,58,3575,Salvador,ocasional,93,10,6865
+274,50,8948,Salvador,ocasional,6,11,6842
+275,57,5739,Belo Horizonte,ocasional,288,8,4497
+276,56,5277,Brasília,frequente,106,7,2309
+277,35,3712,Recife,frequente,146,7,4149
+278,57,6050,São Paulo,ocasional,271,9,4100
+279,18,4136,Recife,ocasional,96,9,4014
+280,28,5183,Curitiba,frequente,229,14,3953
+281,45,8840,Curitiba,ocasional,202,9,4019
+282,42,4855,Rio de Janeiro,frequente,212,12,4420
+283,67,6723,Porto Alegre,premium,6,16,4046
+284,40,3945,Salvador,ocasional,112,8,5312
+285,48,4947,Manaus,ocasional,323,7,5540
+286,47,7656,Recife,frequente,106,12,3634
+287,59,4059,Curitiba,frequente,139,9,6906
+288,52,7718,Brasília,ocasional,299,11,3529
+289,24,6061,Belo Horizonte,premium,96,13,2573
+290,33,4156,São Paulo,ocasional,337,14,5571
+291,43,5948,Porto Alegre,ocasional,297,17,3773
+292,65,6458,Brasília,frequente,214,8,5481
+293,69,5932,Porto Alegre,frequente,291,9,1394
+294,66,2644,Rio de Janeiro,ocasional,22,9,7088
+295,19,3909,Manaus,frequente,193,7,6008
+296,18,4628,Curitiba,ocasional,150,8,2749
+297,65,4888,Belo Horizonte,ocasional,247,6,2781
+298,29,5931,Brasília,ocasional,267,9,7508
+299,22,5266,Porto Alegre,frequente,251,6,3893
+300,54,2996,Salvador,ocasional,3,12,3748
+301,49,5570,Rio de Janeiro,ocasional,316,12,1600
+302,26,5915,Salvador,ocasional,76,10,4473
+303,58,5839,Belo Horizonte,frequente,87,12,4658
+304,52,6621,Brasília,frequente,270,12,6073
+305,36,6250,Rio de Janeiro,frequente,225,10,2901
+306,65,5688,Brasília,ocasional,18,12,2719
+307,33,4894,Curitiba,frequente,113,14,5676
+308,20,2508,Fortaleza,ocasional,251,4,6510
+309,37,5644,Rio de Janeiro,frequente,233,9,2643
+310,41,5311,Salvador,premium,329,7,6622
+311,50,5407,Belo Horizonte,ocasional,279,10,5056
+312,41,3084,Manaus,frequente,202,8,6637
+313,69,3378,Curitiba,ocasional,83,14,4894
+314,28,6579,Fortaleza,ocasional,125,7,1216
+315,66,4940,Manaus,ocasional,175,8,4772
+316,25,6022,São Paulo,ocasional,69,10,6590
+317,53,5042,Curitiba,ocasional,47,6,3659
+318,55,5044,Belo Horizonte,frequente,256,16,4418
+319,57,6407,Porto Alegre,ocasional,215,10,4735
+320,37,4225,Rio de Janeiro,frequente,30,5,650
+321,52,5144,Brasília,ocasional,281,8,7507
+322,65,4306,Belo Horizonte,ocasional,237,2,3647
+323,42,4348,Rio de Janeiro,frequente,248,13,5758
+324,52,4536,Manaus,ocasional,25,10,4869
+325,42,5333,Brasília,ocasional,74,9,6886
+326,46,4281,Recife,frequente,206,13,5609
+327,35,6883,Salvador,ocasional,314,9,4647
+328,63,3658,São Paulo,ocasional,94,10,3659
+329,35,4719,Curitiba,ocasional,127,8,6196
+330,19,4340,Belo Horizonte,premium,25,10,2189
+331,52,7170,São Paulo,frequente,334,6,5968
+332,33,5294,Porto Alegre,frequente,355,8,3351
+333,58,6547,Rio de Janeiro,frequente,116,5,6878
+334,53,2771,Rio de Janeiro,ocasional,48,9,5241
+335,50,5400,Belo Horizonte,ocasional,226,7,5966
+336,21,6334,Fortaleza,frequente,266,5,5122
+337,50,5123,Fortaleza,ocasional,99,8,2371
+338,31,6598,Recife,ocasional,11,15,3708
+339,38,4224,Salvador,ocasional,85,5,6008
+340,65,7114,Brasília,ocasional,214,18,5249
+341,37,8448,Porto Alegre,premium,173,9,6771
+342,25,4455,São Paulo,ocasional,209,8,5604
+343,24,4331,Fortaleza,ocasional,64,10,3549
+344,20,7180,Recife,ocasional,258,14,3805
+345,34,7369,Recife,premium,332,11,5154
+346,50,4215,Belo Horizonte,ocasional,121,10,1528
+347,65,4369,Porto Alegre,ocasional,298,11,7510
+348,29,4577,Manaus,frequente,54,13,5662
+349,68,2983,Brasília,frequente,331,9,6840
+350,39,3622,Salvador,ocasional,272,9,2629
+351,39,3493,Curitiba,ocasional,241,10,6866
+352,63,3848,Belo Horizonte,ocasional,243,11,8347
+353,47,4947,Brasília,ocasional,18,13,3018
+354,55,5351,Curitiba,ocasional,187,7,6157
+355,55,7325,Curitiba,ocasional,346,7,5001
+356,62,3502,Porto Alegre,ocasional,144,11,2683
+357,68,6476,Porto Alegre,ocasional,262,6,5739
+358,25,4679,São Paulo,frequente,364,14,6250
+359,44,4925,Recife,premium,239,12,4098
+360,44,6012,Brasília,frequente,304,5,6748
+361,51,3315,Belo Horizonte,ocasional,298,9,2499
+362,38,5573,Rio de Janeiro,ocasional,76,18,2757
+363,47,5249,Belo Horizonte,premium,188,8,5204
+364,50,5738,São Paulo,ocasional,333,12,5038
+365,45,5433,Salvador,ocasional,246,12,3925
+366,64,8682,Recife,ocasional,130,3,6214
+367,50,4043,Rio de Janeiro,frequente,315,8,5796
+368,22,4203,Fortaleza,frequente,283,10,6287
+369,65,4065,Salvador,ocasional,79,7,4815
+370,36,4166,Porto Alegre,ocasional,72,9,5903
+371,21,4043,Curitiba,premium,263,12,4331
+372,52,6783,Fortaleza,ocasional,191,11,8080
+373,66,7130,Belo Horizonte,frequente,63,12,3781
+374,34,4143,Belo Horizonte,frequente,12,11,8157
+375,61,3751,Porto Alegre,frequente,141,7,5052
+376,45,5707,São Paulo,ocasional,254,10,2936
+377,47,4171,Brasília,ocasional,43,4,7052
+378,46,5949,Fortaleza,ocasional,17,8,5188
+379,63,5304,Fortaleza,frequente,63,10,6276
+380,23,2726,Manaus,premium,253,8,6835
+381,52,7321,Salvador,ocasional,292,7,5506
+382,58,7693,Recife,ocasional,8,12,4111
+383,54,4080,Salvador,premium,325,9,6463
+384,41,4418,Brasília,frequente,90,13,5001
+385,46,5428,Belo Horizonte,frequente,208,4,6028
+386,66,5501,Belo Horizonte,ocasional,292,8,1769
+387,63,5987,Belo Horizonte,ocasional,284,14,5670
+388,48,8015,Manaus,frequente,118,12,4042
+389,52,4734,Belo Horizonte,frequente,349,4,7479
+390,50,3802,Brasília,ocasional,175,8,5934
+391,69,2931,Porto Alegre,ocasional,76,13,5359
+392,38,3903,Recife,ocasional,101,13,5729
+393,49,4950,Brasília,ocasional,151,9,3502
+394,40,7691,Recife,ocasional,270,7,7434
+395,50,4223,Brasília,premium,71,11,7987
+396,20,5335,Belo Horizonte,ocasional,180,10,5589
+397,35,4975,Porto Alegre,frequente,124,11,7385
+398,42,6782,Fortaleza,ocasional,293,10,4146
+399,59,8790,Salvador,frequente,285,7,3804
+400,48,4203,Curitiba,premium,195,8,5061
+401,20,4265,Porto Alegre,ocasional,228,10,5652
+402,57,6566,Fortaleza,ocasional,275,7,4409
+403,63,6022,São Paulo,ocasional,106,14,5806
+404,41,7770,Brasília,ocasional,21,14,5459
+405,67,5875,São Paulo,frequente,64,11,3502
+406,49,4461,Fortaleza,premium,165,10,5778
+407,64,5885,Porto Alegre,ocasional,27,11,6295
+408,39,6663,Brasília,ocasional,311,9,5257
+409,40,6230,Curitiba,ocasional,285,10,6728
+410,19,5760,Belo Horizonte,frequente,148,6,3173
+411,44,6600,Brasília,ocasional,281,10,5701
+412,59,6753,Brasília,ocasional,326,5,3244
+413,19,7073,Porto Alegre,frequente,319,11,3328
+414,43,5973,Porto Alegre,frequente,164,5,4053
+415,34,4749,Fortaleza,ocasional,224,7,3586
+416,57,5220,Rio de Janeiro,frequente,272,7,4178
+417,50,6809,Brasília,ocasional,146,16,4678
+418,26,3774,Salvador,ocasional,356,8,6255
+419,60,5553,Brasília,frequente,30,8,4518
+420,65,4409,Fortaleza,frequente,45,16,2621
+421,56,5043,Recife,ocasional,275,12,6710
+422,46,6917,São Paulo,ocasional,34,21,3744
+423,59,5286,Belo Horizonte,ocasional,141,13,4911
+424,43,5069,Rio de Janeiro,ocasional,318,11,5669
+425,52,2960,Curitiba,ocasional,221,15,5299
+426,67,6119,Curitiba,ocasional,356,13,6641
+427,42,5968,Curitiba,ocasional,22,10,5718
+428,41,8244,Porto Alegre,frequente,180,9,3708
+429,30,4538,Curitiba,frequente,329,16,8267
+430,24,5328,Belo Horizonte,frequente,231,8,5291
+431,53,5374,São Paulo,ocasional,38,9,4778
+432,62,7366,Curitiba,premium,70,9,6445
+433,37,4857,Brasília,frequente,116,12,5374
+434,18,5418,Brasília,frequente,239,8,5598
+435,25,5911,Porto Alegre,frequente,335,6,8738
+436,63,5279,Belo Horizonte,premium,148,9,4587
+437,33,4330,São Paulo,ocasional,9,13,4523
+438,31,5291,Rio de Janeiro,ocasional,288,9,5174
+439,29,6610,Fortaleza,frequente,50,14,6607
+440,68,3460,São Paulo,frequente,338,10,2740
+441,40,5199,Fortaleza,frequente,5,13,2051
+442,32,3949,Recife,ocasional,343,9,4119
+443,45,6792,Fortaleza,ocasional,126,10,2549
+444,51,2715,Salvador,ocasional,75,13,4362
+445,19,4161,Brasília,premium,165,7,5753
+446,49,5565,Belo Horizonte,ocasional,278,7,3663
+447,40,7348,Manaus,ocasional,324,11,2859
+448,39,4901,Porto Alegre,ocasional,300,11,5104
+449,68,4167,Salvador,ocasional,290,8,6293
+450,42,7821,Fortaleza,frequente,77,11,2457
+451,39,2827,Curitiba,frequente,298,11,6230
+452,39,1701,Belo Horizonte,frequente,137,12,6225
+453,66,5660,Salvador,ocasional,106,7,6431
+454,69,4246,Porto Alegre,frequente,95,6,6827
+455,59,3468,Brasília,ocasional,135,18,8303
+456,23,6062,Belo Horizonte,frequente,68,7,4465
+457,32,5365,Porto Alegre,ocasional,147,13,5164
+458,60,4153,Recife,ocasional,159,11,4375
+459,54,3079,Recife,frequente,163,14,5002
+460,50,6308,Porto Alegre,premium,341,11,7299
+461,25,5975,Salvador,ocasional,189,18,2982
+462,61,4851,Belo Horizonte,frequente,339,11,3708
+463,61,7769,Salvador,ocasional,95,12,7065
+464,22,3394,Rio de Janeiro,ocasional,181,7,6530
+465,56,2711,Fortaleza,ocasional,288,15,4455
+466,21,3962,Rio de Janeiro,ocasional,322,6,6281
+467,23,4931,Recife,ocasional,187,6,5511
+468,62,5365,Brasília,ocasional,138,7,7250
+469,49,4638,São Paulo,ocasional,130,12,5111
+470,69,5528,Fortaleza,premium,194,13,6538
+471,47,3122,Recife,ocasional,316,9,8963
+472,64,7165,Salvador,frequente,273,8,5897
+473,52,4876,Salvador,ocasional,352,11,5073
+474,57,6675,Salvador,frequente,144,15,6083
+475,69,5514,Brasília,ocasional,16,15,4452
+476,33,5685,Rio de Janeiro,ocasional,302,12,8581
+477,30,5854,São Paulo,ocasional,245,7,5270
+478,67,5671,Salvador,ocasional,107,5,4590
+479,59,5964,Manaus,ocasional,88,5,3746
+480,47,6993,Fortaleza,frequente,129,13,6645
+481,36,5294,Belo Horizonte,frequente,341,6,6300
+482,34,6063,Manaus,frequente,4,7,4253
+483,36,4865,São Paulo,frequente,327,13,5864
+484,45,7160,Brasília,ocasional,306,11,2737
+485,43,3985,São Paulo,ocasional,95,12,5277
+486,54,7701,Belo Horizonte,ocasional,209,11,5679
+487,43,4939,Fortaleza,ocasional,225,15,7560
+488,40,2853,Belo Horizonte,ocasional,348,6,3843
+489,26,5192,Porto Alegre,ocasional,321,15,3082
+490,29,3978,Fortaleza,ocasional,47,11,3656
+491,18,6260,São Paulo,ocasional,181,9,2995
+492,18,4021,Salvador,frequente,106,16,7004
+493,64,4330,São Paulo,frequente,199,14,7322
+494,51,2165,São Paulo,ocasional,106,7,5480
+495,49,4321,Fortaleza,premium,280,8,6831
+496,65,1364,Porto Alegre,premium,260,11,5200
+497,42,2624,São Paulo,ocasional,108,7,4857
+498,57,6140,Manaus,ocasional,19,11,4500
+499,62,6178,Recife,ocasional,296,13,4534
+500,18,5638,Curitiba,premium,306,11,2678
+501,33,3549,Curitiba,frequente,171,11,5396
+502,56,4928,São Paulo,ocasional,331,8,4939
+503,22,4994,Manaus,ocasional,195,8,6118
+504,39,3262,Salvador,ocasional,12,10,5140
+505,46,7255,Brasília,ocasional,195,18,4755
+506,20,6316,Brasília,ocasional,283,8,3693
+507,29,4668,Fortaleza,frequente,182,8,5108
+508,43,5040,Curitiba,frequente,305,9,6107
+509,33,5312,São Paulo,frequente,144,11,3284
+510,68,1937,Brasília,frequente,316,13,5131
+511,54,4629,São Paulo,frequente,182,4,5349
+512,39,3977,Fortaleza,ocasional,30,6,3922
+513,46,3497,Curitiba,frequente,84,16,4118
+514,31,4578,Belo Horizonte,ocasional,166,14,5345
+515,45,7696,Recife,frequente,284,12,3299
+516,22,5961,Recife,ocasional,281,6,5524
+517,64,4143,Brasília,frequente,96,11,3656
+518,66,5858,Recife,ocasional,266,9,6594
+519,47,7099,Belo Horizonte,ocasional,298,13,8506
+520,63,6386,São Paulo,ocasional,296,13,3708
+521,69,5089,Fortaleza,ocasional,225,14,5801
+522,22,4029,Belo Horizonte,frequente,333,11,3909
+523,29,6047,Fortaleza,frequente,361,9,6561
+524,33,5590,Fortaleza,ocasional,42,5,3102
+525,43,6342,Curitiba,ocasional,303,14,5720
+526,43,5952,São Paulo,ocasional,246,7,3690
+527,65,6574,Manaus,ocasional,208,8,4689
+528,38,4197,Recife,ocasional,237,9,3453
+529,56,6976,Manaus,frequente,22,6,6233
+530,53,5296,Curitiba,ocasional,185,9,3744
+531,50,8112,Fortaleza,ocasional,242,12,5827
+532,47,3966,Brasília,ocasional,363,12,4483
+533,54,7603,Recife,ocasional,283,13,4828
+534,40,5296,Recife,ocasional,41,7,5221
+535,27,4022,São Paulo,frequente,336,11,3857
+536,22,4274,Porto Alegre,ocasional,162,9,5315
+537,53,4519,Rio de Janeiro,ocasional,160,14,7295
+538,51,5636,Rio de Janeiro,ocasional,89,9,3832
+539,69,5784,Rio de Janeiro,ocasional,322,7,6757
+540,48,4139,Porto Alegre,ocasional,12,10,7247
+541,27,4963,São Paulo,premium,73,13,3775
+542,36,8213,Porto Alegre,frequente,76,12,2817
+543,49,7591,Rio de Janeiro,ocasional,346,10,5452
+544,18,5654,Curitiba,ocasional,201,10,4178
+545,22,5057,Belo Horizonte,ocasional,10,15,7802
+546,62,5180,Fortaleza,ocasional,352,17,5052
+547,21,5920,Porto Alegre,frequente,226,11,3796
+548,33,3465,São Paulo,frequente,176,6,3279
+549,41,4613,São Paulo,ocasional,276,5,6634
+550,33,2497,Manaus,ocasional,39,9,4143
+551,19,5598,Belo Horizonte,ocasional,60,7,5065
+552,66,5970,Brasília,frequente,66,9,6433
+553,45,4275,Recife,frequente,321,12,4273
+554,49,7360,Rio de Janeiro,ocasional,124,10,4931
+555,44,3161,Brasília,ocasional,164,8,4975
+556,37,2803,Manaus,frequente,159,6,6024
+557,41,5336,Rio de Janeiro,ocasional,57,7,5886
+558,29,6570,Belo Horizonte,ocasional,78,4,4669
+559,67,7525,Manaus,ocasional,194,9,5095
+560,52,4311,Rio de Janeiro,frequente,285,12,4442
+561,50,6618,Belo Horizonte,ocasional,15,7,2783
+562,50,4942,Salvador,ocasional,12,9,5386
+563,68,4741,Brasília,frequente,101,18,7838
+564,60,6325,Brasília,ocasional,156,8,3674
+565,54,5978,Recife,ocasional,340,6,3840
+566,29,2635,Belo Horizonte,ocasional,125,13,3693
+567,20,7214,Porto Alegre,ocasional,359,8,6086
+568,18,7070,Salvador,frequente,280,9,5672
+569,50,4061,Curitiba,ocasional,110,10,4762
+570,57,5593,Rio de Janeiro,ocasional,334,15,3622
+571,27,5741,Salvador,ocasional,357,13,5138
+572,60,5391,Belo Horizonte,frequente,146,3,2653
+573,61,4174,Fortaleza,frequente,216,10,5215
+574,46,3992,Rio de Janeiro,ocasional,162,11,6307
+575,30,4961,São Paulo,ocasional,128,18,3123
+576,29,6759,Brasília,frequente,314,6,2701
+577,48,5815,Belo Horizonte,ocasional,332,10,7369
+578,63,4444,São Paulo,frequente,150,10,4082
+579,19,6157,Recife,frequente,36,10,6703
+580,68,727,Manaus,frequente,173,11,4769
+581,67,6723,Curitiba,ocasional,22,14,4757
+582,52,2390,Curitiba,ocasional,206,10,5657
+583,40,4456,São Paulo,frequente,127,11,3674
+584,34,3320,Brasília,ocasional,336,9,5198
+585,43,3057,Recife,ocasional,356,6,4427
+586,25,6741,Fortaleza,frequente,217,10,3019
+587,46,4298,Brasília,frequente,96,9,5506
+588,43,5519,Salvador,ocasional,164,14,4605
+589,27,4929,Curitiba,ocasional,148,5,4764
+590,43,5715,Salvador,ocasional,18,14,3184
+591,51,5115,Rio de Janeiro,frequente,294,12,7387
+592,68,3075,Porto Alegre,premium,195,11,6315
+593,58,6494,Belo Horizonte,ocasional,151,13,6446
+594,24,4259,Recife,ocasional,123,11,4541
+595,21,2665,Brasília,frequente,187,6,2406
+596,67,4357,Curitiba,ocasional,149,11,7929
+597,62,7251,Salvador,ocasional,104,9,4908
+598,28,6275,Manaus,premium,243,12,3876
+599,46,4477,Rio de Janeiro,ocasional,231,5,5625
+600,53,4476,Belo Horizonte,frequente,206,10,6750
+601,42,4517,Belo Horizonte,ocasional,198,14,4965
+602,38,8115,Brasília,ocasional,337,10,6917
+603,53,5572,Recife,frequente,87,9,6624
+604,27,5645,Fortaleza,ocasional,142,10,3385
+605,54,6545,Manaus,premium,317,7,3989
+606,26,5358,Brasília,ocasional,199,10,6436
+607,41,4611,Salvador,ocasional,46,5,931
+608,52,4705,Porto Alegre,ocasional,288,17,4775
+609,66,4892,São Paulo,ocasional,15,6,2853
+610,52,4944,Fortaleza,ocasional,44,8,4285
+611,65,6091,Recife,ocasional,169,8,4551
+612,53,5077,Rio de Janeiro,ocasional,310,10,4462
+613,35,6098,Fortaleza,ocasional,44,9,4171
+614,66,4878,Curitiba,frequente,98,7,3354
+615,56,5117,Recife,frequente,261,13,8437
+616,49,2002,Porto Alegre,frequente,109,12,7801
+617,41,6374,Curitiba,ocasional,283,9,3256
+618,40,5519,Fortaleza,ocasional,343,8,7373
+619,49,6497,São Paulo,frequente,104,7,4400
+620,54,655,São Paulo,ocasional,256,7,5193
+621,29,8132,Porto Alegre,ocasional,206,8,4905
+622,66,4790,Belo Horizonte,frequente,335,6,4010
+623,30,6662,Manaus,frequente,43,10,6475
+624,40,3440,Rio de Janeiro,ocasional,353,16,5188
+625,42,5919,Belo Horizonte,ocasional,245,8,4285
+626,52,3419,São Paulo,frequente,287,8,3043
+627,58,4064,São Paulo,ocasional,355,3,3659
+628,47,7871,Salvador,frequente,273,10,2537
+629,34,4713,Curitiba,frequente,83,6,5018
+630,66,5326,Fortaleza,frequente,110,9,3205
+631,37,6305,Rio de Janeiro,ocasional,190,10,4601
+632,65,5743,Porto Alegre,ocasional,288,11,7055
+633,42,5225,Fortaleza,frequente,251,10,6798
+634,39,5547,Salvador,frequente,212,13,4951
+635,30,8605,São Paulo,frequente,291,10,4869
+636,36,4913,Porto Alegre,ocasional,133,11,7819
+637,66,5301,São Paulo,ocasional,201,3,5781
+638,53,6575,Rio de Janeiro,frequente,285,7,4508
+639,29,6658,Curitiba,frequente,326,12,2860
+640,58,6780,Fortaleza,premium,95,6,5590
+641,36,5958,Fortaleza,frequente,278,6,6243
+642,29,3285,Belo Horizonte,ocasional,325,7,4052
+643,26,7450,Porto Alegre,frequente,219,7,5436
+644,24,3280,Manaus,frequente,89,3,4454
+645,45,5453,Salvador,ocasional,72,10,4723
+646,31,3868,Manaus,frequente,247,11,1268
+647,48,4903,Belo Horizonte,ocasional,129,7,4667
+648,69,5493,Rio de Janeiro,ocasional,212,11,6454
+649,36,5482,Salvador,frequente,343,13,4052
+650,64,5632,Curitiba,ocasional,96,6,5078
+651,33,7420,Manaus,ocasional,75,12,3866
+652,22,5680,Curitiba,ocasional,54,12,5540
+653,52,4633,Manaus,ocasional,344,7,4675
+654,29,6446,Curitiba,ocasional,54,12,3591
+655,42,6784,Manaus,ocasional,218,15,6998
+656,69,3158,Curitiba,premium,16,7,6393
+657,38,5896,Belo Horizonte,ocasional,99,9,4092
+658,53,6051,Recife,ocasional,20,10,5746
+659,40,4553,Salvador,ocasional,46,9,5806
+660,33,7063,Porto Alegre,frequente,193,6,5963
+661,56,4774,Rio de Janeiro,ocasional,58,9,2458
+662,62,5188,Brasília,frequente,111,13,6509
+663,59,4740,São Paulo,frequente,129,7,4145
+664,56,5023,Porto Alegre,frequente,337,5,4463
+665,31,3355,São Paulo,ocasional,194,13,8956
+666,48,2839,Salvador,frequente,340,10,5452
+667,22,7391,Porto Alegre,ocasional,326,9,4420
+668,52,3729,Curitiba,premium,8,11,1692
+669,40,3512,Curitiba,frequente,29,15,7084
+670,46,1769,Brasília,ocasional,112,10,2982
+671,60,4041,São Paulo,ocasional,161,13,3494
+672,28,3015,Rio de Janeiro,ocasional,131,12,4502
+673,35,7463,Salvador,frequente,188,10,7124
+674,64,6514,Curitiba,ocasional,163,8,6159
+675,29,3967,Recife,ocasional,197,9,4763
+676,26,8378,Belo Horizonte,ocasional,364,11,5462
+677,27,6472,Belo Horizonte,frequente,204,14,4099
+678,61,4512,Manaus,frequente,212,6,5209
+679,34,1250,Rio de Janeiro,frequente,109,14,5110
+680,55,8436,Belo Horizonte,frequente,276,8,6453
+681,24,2915,Manaus,ocasional,73,4,6450
+682,63,2531,São Paulo,ocasional,167,11,5740
+683,30,6533,Curitiba,frequente,260,7,4456
+684,57,8659,Curitiba,ocasional,243,14,6112
+685,59,7076,Recife,ocasional,275,13,4862
+686,26,5845,Porto Alegre,ocasional,102,7,3377
+687,67,5892,Belo Horizonte,ocasional,173,14,4395
+688,44,6280,São Paulo,ocasional,171,6,5126
+689,19,6138,Fortaleza,frequente,141,17,6365
+690,22,5421,Belo Horizonte,ocasional,188,8,4724
+691,46,5156,Rio de Janeiro,ocasional,86,12,3186
+692,54,4906,Porto Alegre,ocasional,52,13,5085
+693,55,3869,Belo Horizonte,frequente,111,10,5170
+694,36,4578,São Paulo,ocasional,342,9,5278
+695,25,2460,Belo Horizonte,frequente,43,9,6379
+696,65,4852,Rio de Janeiro,frequente,211,10,6528
+697,62,3517,Fortaleza,ocasional,200,9,4108
+698,18,3344,Salvador,premium,298,12,4075
+699,39,5269,Brasília,premium,346,8,3439
+700,69,7088,Fortaleza,frequente,240,12,6048
+701,34,6377,Manaus,frequente,115,11,7173
+702,24,2644,Belo Horizonte,ocasional,26,11,4527
+703,42,3515,Curitiba,ocasional,299,10,4637
+704,62,6411,Recife,ocasional,77,5,7200
+705,21,3526,Curitiba,ocasional,137,17,5758
+706,53,4663,Fortaleza,premium,20,10,5654
+707,23,5825,Curitiba,ocasional,211,10,3213
+708,48,3547,São Paulo,frequente,240,7,6018
+709,36,5158,Curitiba,frequente,39,6,3606
+710,61,2998,Porto Alegre,frequente,268,10,3298
+711,56,4097,Salvador,premium,207,7,4479
+712,44,5479,Belo Horizonte,ocasional,267,11,4121
+713,27,2610,Curitiba,ocasional,154,9,4667
+714,43,5660,Rio de Janeiro,ocasional,42,11,2838
+715,36,4970,Salvador,ocasional,11,10,6438
+716,56,5828,Salvador,ocasional,294,4,6691
+717,20,5335,Curitiba,ocasional,98,7,2078
+718,62,7046,Salvador,frequente,275,10,6467
+719,30,5187,Recife,ocasional,230,9,3784
+720,67,4355,Curitiba,ocasional,220,10,6285
+721,45,5183,São Paulo,frequente,65,12,4897
+722,37,5814,Fortaleza,ocasional,355,7,5043
+723,45,5073,Porto Alegre,ocasional,232,11,4722
+724,25,5060,Brasília,frequente,328,10,6818
+725,58,3947,Manaus,frequente,52,10,3140
+726,56,4005,Salvador,frequente,263,8,5911
+727,18,2896,São Paulo,ocasional,267,5,6651
+728,20,7624,Belo Horizonte,frequente,359,12,6074
+729,30,3134,Belo Horizonte,frequente,317,10,8487
+730,45,3960,Manaus,ocasional,324,9,4206
+731,66,3922,Porto Alegre,frequente,154,8,6435
+732,42,6342,Salvador,frequente,358,3,4840
+733,50,4557,Recife,ocasional,140,14,6850
+734,55,6871,Manaus,ocasional,51,7,4988
+735,23,3989,Porto Alegre,premium,117,9,4418
+736,61,5418,Salvador,frequente,46,13,6959
+737,62,3746,São Paulo,ocasional,309,4,4262
+738,49,8217,Fortaleza,frequente,88,9,2880
+739,62,3218,Recife,ocasional,208,8,4224
+740,64,5464,Brasília,ocasional,269,14,5928
+741,38,5950,Belo Horizonte,ocasional,89,13,7088
+742,33,5620,Rio de Janeiro,premium,118,10,5166
+743,38,4722,São Paulo,premium,54,6,6977
+744,28,4805,Belo Horizonte,ocasional,116,8,2962
+745,54,5065,Curitiba,ocasional,118,12,4335
+746,53,4779,Rio de Janeiro,ocasional,260,11,4567
+747,52,6445,Belo Horizonte,premium,75,19,4828
+748,36,8315,Porto Alegre,premium,305,4,5126
+749,37,4163,Recife,frequente,7,9,6036
+750,35,2945,Belo Horizonte,frequente,122,15,4332
+751,64,4867,Brasília,frequente,11,11,5208
+752,58,8869,Fortaleza,ocasional,348,8,4932
+753,66,3794,Porto Alegre,ocasional,215,17,3611
+754,31,7458,São Paulo,ocasional,279,13,4829
+755,32,7516,São Paulo,frequente,28,10,4784
+756,48,4169,São Paulo,frequente,235,11,4752
+757,18,5853,São Paulo,ocasional,313,10,5047
+758,20,7442,Fortaleza,premium,26,10,5113
+759,33,4431,Belo Horizonte,ocasional,54,11,4351
+760,40,4694,Salvador,ocasional,29,11,6909
+761,28,4127,Belo Horizonte,frequente,353,7,3245
+762,29,3477,Curitiba,frequente,164,17,3918
+763,27,4026,Recife,frequente,270,9,9169
+764,49,3164,Rio de Janeiro,ocasional,334,11,3443
+765,33,5051,Salvador,ocasional,35,9,2969
+766,25,3845,Salvador,frequente,286,19,6101
+767,55,5350,Belo Horizonte,ocasional,348,9,1884
+768,29,2666,Salvador,ocasional,273,7,4647
+769,41,5496,Manaus,frequente,208,7,8218
+770,45,6250,Manaus,ocasional,238,10,2682
+771,25,2009,Curitiba,frequente,93,5,2027
+772,45,5561,Rio de Janeiro,frequente,173,10,2751
+773,53,6841,Brasília,ocasional,79,7,6347
+774,43,3185,Fortaleza,ocasional,110,13,6687
+775,25,7508,Belo Horizonte,frequente,217,9,4231
+776,67,5628,Fortaleza,frequente,358,10,6024
+777,45,3942,Brasília,frequente,106,16,7085
+778,45,4916,Belo Horizonte,frequente,47,4,7681
+779,54,5837,Belo Horizonte,frequente,181,10,4630
+780,58,5114,Rio de Janeiro,premium,64,7,1547
+781,53,5808,Fortaleza,ocasional,246,19,3768
+782,44,3618,Manaus,ocasional,244,10,4359
+783,34,5254,São Paulo,ocasional,320,11,4611
+784,26,2879,Fortaleza,ocasional,87,6,4718
+785,50,4833,Recife,ocasional,217,8,6678
+786,37,3644,Recife,ocasional,7,11,6911
+787,30,3896,Belo Horizonte,premium,278,9,4742
+788,45,6854,São Paulo,ocasional,337,7,6647
+789,65,6636,Porto Alegre,ocasional,210,7,5536
+790,46,5913,Brasília,ocasional,169,6,5096
+791,30,3361,Curitiba,ocasional,330,12,6359
+792,63,4525,São Paulo,ocasional,138,9,5108
+793,52,6819,Curitiba,ocasional,306,11,8086
+794,23,5212,Fortaleza,ocasional,230,15,2842
+795,35,8478,Fortaleza,frequente,308,9,4227
+796,68,5589,Curitiba,frequente,161,12,4810
+797,22,5288,Brasília,frequente,1,12,5659
+798,64,4536,São Paulo,frequente,236,10,6901
+799,42,5200,Porto Alegre,ocasional,188,7,4963
+800,19,4771,Belo Horizonte,frequente,4,9,2866
+801,27,6062,Rio de Janeiro,frequente,132,9,6263
+802,47,6435,Fortaleza,ocasional,218,12,6132
+803,67,3821,Recife,frequente,260,5,2087
+804,62,3003,Brasília,ocasional,1,15,4994
+805,22,2245,Rio de Janeiro,frequente,71,10,2614
+806,50,5761,Porto Alegre,premium,178,9,4003
+807,18,3344,Salvador,ocasional,189,10,3645
+808,35,1770,Belo Horizonte,frequente,291,6,6213
+809,49,5582,Fortaleza,frequente,8,16,5175
+810,64,8739,Belo Horizonte,premium,253,7,3071
+811,66,4990,Rio de Janeiro,ocasional,292,7,6320
+812,28,6257,Belo Horizonte,frequente,244,10,2849
+813,38,5122,Salvador,ocasional,123,5,5495
+814,43,4851,Rio de Janeiro,ocasional,299,10,3778
+815,42,6378,Fortaleza,ocasional,283,13,4451
+816,39,4564,São Paulo,premium,32,13,5756
+817,44,5401,Recife,frequente,334,10,5782
+818,66,5482,Rio de Janeiro,frequente,146,9,7005
+819,30,3997,Manaus,premium,156,12,4876
+820,50,6488,Salvador,ocasional,16,11,5459
+821,51,4737,Rio de Janeiro,ocasional,355,15,4343
+822,58,3866,Rio de Janeiro,ocasional,47,5,5272
+823,52,5804,Manaus,ocasional,251,10,5659
+824,18,3652,Fortaleza,ocasional,187,8,4852
+825,38,5042,Rio de Janeiro,ocasional,31,8,2294
+826,65,4986,Recife,ocasional,260,7,5497
+827,23,6628,Belo Horizonte,ocasional,17,7,5546
+828,45,5712,Fortaleza,ocasional,39,6,3979
+829,34,4962,Recife,ocasional,304,11,3073
+830,22,6226,Fortaleza,premium,39,8,7213
+831,48,7085,Recife,frequente,132,8,5737
+832,22,5836,Salvador,premium,30,6,4656
+833,55,5015,Recife,ocasional,158,8,3294
+834,20,3032,Curitiba,ocasional,278,7,3767
+835,40,3402,Recife,frequente,203,6,6953
+836,54,4542,São Paulo,ocasional,66,11,5206
+837,54,4085,São Paulo,ocasional,108,10,4174
+838,27,4719,Brasília,ocasional,268,11,5764
+839,27,5084,Curitiba,ocasional,222,14,3778
+840,36,5794,Curitiba,ocasional,292,12,7251
+841,34,4894,Belo Horizonte,ocasional,18,9,7029
+842,38,5729,Curitiba,frequente,90,10,4300
+843,31,5096,Belo Horizonte,ocasional,181,13,4056
+844,26,2036,Brasília,ocasional,255,11,1072
+845,63,3590,Brasília,frequente,253,12,2777
+846,18,4783,Salvador,ocasional,257,13,2990
+847,68,3185,São Paulo,ocasional,346,11,5202
+848,62,5899,Recife,frequente,87,9,4510
+849,30,7296,Recife,ocasional,90,10,2981
+850,21,6828,Manaus,ocasional,237,16,4578
+851,18,4679,Manaus,ocasional,70,5,5758
+852,66,7236,Porto Alegre,ocasional,44,14,5791
+853,57,5223,Fortaleza,ocasional,200,5,2150
+854,49,4494,Salvador,frequente,152,7,4807
+855,51,4079,Porto Alegre,ocasional,86,13,2924
+856,45,4546,Porto Alegre,ocasional,19,13,6352
+857,48,4417,Rio de Janeiro,ocasional,101,11,6176
+858,25,5255,Rio de Janeiro,ocasional,95,8,3652
+859,56,5240,Porto Alegre,frequente,254,10,3850
+860,43,5004,Curitiba,ocasional,357,16,4308
+861,51,5655,Fortaleza,ocasional,30,6,1620
+862,20,6785,Salvador,ocasional,249,16,5503
+863,67,6424,Porto Alegre,ocasional,33,6,4590
+864,29,2772,Recife,ocasional,229,12,6455
+865,18,1169,Fortaleza,frequente,12,8,3352
+866,61,6401,Rio de Janeiro,ocasional,118,8,4071
+867,22,2949,Recife,ocasional,350,14,2740
+868,47,4662,Rio de Janeiro,ocasional,155,8,3493
+869,47,3244,Rio de Janeiro,frequente,246,6,3227
+870,34,2297,Fortaleza,ocasional,332,20,6493
+871,65,5812,Rio de Janeiro,frequente,247,14,3952
+872,64,6138,Brasília,frequente,29,11,5186
+873,40,4135,São Paulo,frequente,161,9,4428
+874,32,1113,Brasília,ocasional,235,12,3095
+875,54,4180,São Paulo,ocasional,190,9,4747
+876,38,5587,Manaus,frequente,117,10,5898
+877,31,2781,Manaus,premium,271,16,3188
+878,19,5275,Rio de Janeiro,frequente,258,14,6213
+879,28,4977,Salvador,ocasional,180,13,3725
+880,68,5868,Salvador,ocasional,172,9,4275
+881,56,5179,São Paulo,ocasional,274,10,5796
+882,55,3540,Recife,frequente,259,18,4004
+883,51,6794,Fortaleza,ocasional,135,5,5056
+884,55,4762,Rio de Janeiro,ocasional,171,3,4527
+885,67,4959,Fortaleza,frequente,210,7,5194
+886,51,3600,Brasília,ocasional,236,9,1428
+887,35,4335,Salvador,frequente,186,12,2255
+888,47,3672,Curitiba,ocasional,364,8,5923
+889,32,4740,Brasília,ocasional,95,13,6555
+890,44,7567,Brasília,ocasional,11,10,3634
+891,68,2942,São Paulo,frequente,68,10,4633
+892,51,2579,Belo Horizonte,ocasional,210,7,5442
+893,69,7206,Brasília,ocasional,196,7,6039
+894,55,4686,Rio de Janeiro,premium,98,12,1958
+895,50,3996,Porto Alegre,ocasional,93,16,3670
+896,41,6559,Porto Alegre,ocasional,22,15,4501
+897,32,4091,Rio de Janeiro,ocasional,172,9,6054
+898,47,7739,Belo Horizonte,ocasional,134,15,8747
+899,59,6016,Belo Horizonte,frequente,25,6,4657
+900,68,4268,São Paulo,ocasional,185,15,2889
+901,34,8235,Salvador,ocasional,85,9,5603
+902,22,4091,Fortaleza,ocasional,55,11,6981
+903,46,6113,Belo Horizonte,frequente,251,11,5162
+904,21,5448,Curitiba,ocasional,144,15,3640
+905,27,6952,São Paulo,ocasional,351,18,6436
+906,34,7342,Manaus,ocasional,167,10,5995
+907,27,5048,Recife,ocasional,224,9,3460
+908,34,3869,Manaus,ocasional,220,10,5572
+909,37,5689,São Paulo,ocasional,179,11,6495
+910,41,3983,Brasília,frequente,119,14,6772
+911,22,8020,Fortaleza,ocasional,265,7,4900
+912,51,5204,Recife,premium,150,13,4462
+913,23,4452,Manaus,premium,215,13,6840
+914,19,5277,Recife,ocasional,197,8,3184
+915,30,2979,Curitiba,ocasional,42,16,5657
+916,60,3542,Curitiba,ocasional,53,7,2944
+917,60,6800,Curitiba,frequente,330,6,6598
+918,65,4014,São Paulo,ocasional,251,10,4612
+919,28,3429,Fortaleza,ocasional,295,16,6902
+920,68,5804,São Paulo,ocasional,271,10,5737
+921,64,6778,Porto Alegre,frequente,123,13,3165
+922,40,6078,Brasília,frequente,339,8,7136
+923,33,6494,Brasília,ocasional,266,7,7326
+924,48,3864,Curitiba,frequente,348,8,6323
+925,28,2867,Porto Alegre,ocasional,29,7,3857
+926,33,7252,Belo Horizonte,ocasional,35,14,4540
+927,25,4515,Belo Horizonte,frequente,6,7,5218
+928,21,4623,Curitiba,ocasional,111,8,3944
+929,57,6992,Manaus,ocasional,294,9,7538
+930,21,5834,São Paulo,ocasional,77,11,5216
+931,42,5683,Curitiba,frequente,349,16,944
+932,20,8247,Salvador,frequente,147,7,5509
+933,49,4034,Recife,frequente,67,11,4477
+934,20,6391,Brasília,frequente,8,9,4887
+935,44,5085,Belo Horizonte,ocasional,122,12,4447
+936,46,5402,Rio de Janeiro,ocasional,340,8,6210
+937,49,7292,Belo Horizonte,ocasional,175,9,6679
+938,67,5761,Brasília,ocasional,179,17,5424
+939,68,5807,Recife,ocasional,85,8,4491
+940,36,6608,Brasília,premium,45,10,4937
+941,38,4452,Rio de Janeiro,ocasional,136,12,5029
+942,22,3741,Curitiba,ocasional,343,11,3796
+943,35,3432,Porto Alegre,ocasional,16,6,5868
+944,45,2050,Rio de Janeiro,ocasional,333,14,5690
+945,59,8084,Brasília,premium,195,13,7310
+946,39,3345,Brasília,ocasional,9,9,6883
+947,38,4668,Salvador,ocasional,316,13,3971
+948,23,4584,Salvador,frequente,334,10,6230
+949,18,5461,Fortaleza,ocasional,333,10,3573
+950,22,6223,Salvador,ocasional,327,17,6043
+951,58,6290,São Paulo,ocasional,15,8,4225
+952,29,4125,Porto Alegre,ocasional,327,14,3465
+953,43,4749,Recife,premium,102,12,5420
+954,63,5423,Rio de Janeiro,frequente,226,7,988
+955,51,4626,Brasília,ocasional,278,4,2373
+956,66,7411,Fortaleza,frequente,113,10,4733
+957,31,5736,Fortaleza,ocasional,1,13,5123
+958,43,6102,Recife,ocasional,266,7,4446
+959,62,5994,Porto Alegre,ocasional,208,14,2630
+960,44,6760,Rio de Janeiro,ocasional,110,9,3773
+961,26,5271,Belo Horizonte,ocasional,200,6,5586
+962,43,3054,Salvador,frequente,306,17,5872
+963,64,5599,Curitiba,premium,12,7,4975
+964,39,4022,Fortaleza,ocasional,345,16,6735
+965,64,4207,Salvador,ocasional,188,8,5596
+966,47,5879,Salvador,ocasional,154,2,3878
+967,60,6857,São Paulo,ocasional,334,8,4579
+968,65,5031,Porto Alegre,ocasional,279,10,2895
+969,34,5463,Curitiba,ocasional,171,7,4837
+970,43,7553,Belo Horizonte,frequente,134,8,6668
+971,53,5361,Brasília,ocasional,25,10,6027
+972,18,8902,São Paulo,ocasional,18,7,7103
+973,25,5848,Salvador,ocasional,190,9,4545
+974,66,2358,Salvador,ocasional,141,10,7019
+975,52,6130,Manaus,ocasional,43,11,4710
+976,69,5571,Curitiba,frequente,334,9,7207
+977,32,6934,Curitiba,ocasional,284,12,4967
+978,64,6009,Manaus,frequente,146,11,6060
+979,39,4792,Curitiba,ocasional,315,9,7212
+980,31,3163,Salvador,ocasional,319,8,4709
+981,43,4686,Fortaleza,ocasional,92,10,5327
+982,45,3724,Rio de Janeiro,frequente,179,13,6933
+983,40,4129,Salvador,ocasional,56,11,4800
+984,31,5882,São Paulo,frequente,155,16,3018
+985,41,7504,Porto Alegre,ocasional,160,12,8214
+986,19,5592,Manaus,frequente,111,7,4295
+987,62,3206,Belo Horizonte,ocasional,137,14,5238
+988,43,5666,Brasília,frequente,232,16,6734
+989,31,6794,Belo Horizonte,ocasional,220,10,4087
+990,68,4085,Salvador,premium,68,13,3488
+991,24,4798,São Paulo,ocasional,302,16,5380
+992,20,5022,Salvador,ocasional,249,6,2310
+993,64,3822,Porto Alegre,ocasional,323,6,4568
+994,40,5972,Fortaleza,frequente,6,9,5367
+995,63,4818,Brasília,ocasional,280,11,4595
+996,60,5629,Porto Alegre,frequente,94,10,2684
+997,64,3668,Manaus,ocasional,269,11,7391
+998,62,4343,Manaus,ocasional,197,10,5155
+999,35,6083,Salvador,ocasional,25,8,7146
+1000,55,4440,São Paulo,premium,148,9,4609
