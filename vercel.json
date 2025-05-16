@@ -9,6 +9,6 @@
         "Cache-Control": "no-cache"
       }
     },
-    {"src": "/.*", "dest": "/index.html"}
+    {"src": "/.*", "dest": "/frontend.html"}
   ]
 }
