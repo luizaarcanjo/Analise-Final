@@ -187,12 +187,21 @@
                 if (linhas.length < 2) throw new Error('CSV inválido');
 
                 const headers = linhas[0].split(',').map(h => h.trim());
-                const expectedHeaders = [
-                    'cliente_id', 'idade', 'renda_anual', 'frequencia_compras',
-                    'valor_medio_compra', 'preferencia_frete_gratis',
-                    'satisfacao_qualidade', 'total_gasto'
+                const expectedHeadersClientes = [
+                    'cliente_id', 'idade', 'renda_mensal', 'cidade',
+                    'tipo_cliente', 'ultima_compra',
+                    'frequencia_compras', 'total_gasto'
                 ];
 
+		const expectedHeadersCampanhas = [
+		      'campanha_id', 'nome_campanha', 'custo_campanha',
+		      'alcance', 'conversao'
+		];
+		const expectedHeadersTransacoes = [
+			'campanha_id', 'cliente_id', 'data_compra',
+			'valor_compra', 'meio_pagamento', 'campanha'
+		];
+		    
                 if (!arraysIguais(headers, expectedHeaders)) {
                     throw new Error('Cabeçalhos do CSV não correspondem');
                 }
