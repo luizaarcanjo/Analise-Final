@@ -173,16 +173,8 @@
                 const csvUrl = `${BASE_URL}/clientes.csv?t=${Date.now()}`;
                 const response = await fetch(csvUrl);
                 
-                if (!response.ok) {
-                    throw new Error(`Erro ${response.status}: ${response.statusText}`);
-		}
-
                 const csvUrl = `${BASE_URL}/campanhas.csv?t=${Date.now()}`;
                 const response = await fetch(csvUrl);
-
-                if (!response.ok){
-                   throw new Error(`Erro ${response.status}: ${response.statusText} `);
-		}
 
                  const csvUrl = `${BASE_URL}/transacoes.csv?t=${Date.now()}`;
                 const response = await fetch(csvUrl);
