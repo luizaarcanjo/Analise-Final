@@ -175,7 +175,21 @@
                 
                 if (!response.ok) {
                     throw new Error(`Erro ${response.status}: ${response.statusText}`);
-                }
+		}
+
+                const csvUrl = `${BASE_URL}/campanhas.csv?t=${Date.now()}`;
+                const response = await fetch(csvUrl);
+
+                if (!response.ok){
+                   throw new Error(`Erro ${response.status}: ${response.statusText} `);
+		}
+
+                 const csvUrl = `${BASE_URL}/transacoes.csv?t=${Date.now()}`;
+                const response = await fetch(csvUrl);
+
+                if (!response.ok){
+                   throw new Error(`Erro ${response.status}: ${response.statusText} `);
+		}
 
                 // Decodificação segura
                 const buffer = await response.arrayBuffer();
@@ -297,7 +311,7 @@
 
 	function formatarCelula(valor, cabecalho) {
             try {
-                const formatadoresTransaçõess = { // Corrigido: Nome da variável e escopo
+                const formatadoresTransacoes = { // Corrigido: Nome da variável e escopo
                     'campanha_id': v => `#${v.padStart(5, '0')}`,
                     'cliente_id': v => `#${v.padStart(4, '0')}`,
                     'data_compra': v => {
