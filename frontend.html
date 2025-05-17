@@ -136,7 +136,10 @@
             <button onclick="carregarImagem('clv campanha')">📊 CLV por Campanha</button>	
             <button onclick="carregarImagem('conjoint')">📈 Conjoint</button>
             <button onclick="carregarImagem('regressao')">🔮 Previsão</button>
-            <button onclick="carregarCSV('campanhas', 'clientes', 'trasacoes')">📂 Carregar Dados</button>
+            <button onclick="carregarCSV('clientes')"> Clientes</button>
+	    <button onclick="carregarCSV('campanhas')"> Campanhas</button>
+            <button onclick="carregarCSV('transacoes')"> Transações</button>
+
         </div>
 
         <div class="imagem-container" id="imagemContainer">
@@ -144,8 +147,17 @@
         </div>
 
         <div class="tabela-container" id="tabelaContainer">
-            <div class="status">Clique em "Carregar Dados" para ver as informações</div>
+            <div class="status">Clique em "Clientes" para ver as informações</div>
         </div>
+
+	<div class="tabela-container" id="tabelaContainer">
+            <div class="status">Clique em "Campanhas" para ver as informações</div>
+        </div>
+
+	<div class="tabela-container" id="tabelaContainer">
+            <div class="status">Clique em "Transações" para ver as informações</div>
+        </div>
+	    
     </div>
 
     <script>
@@ -158,7 +170,7 @@
                 container.innerHTML = '<div class="status">Carregando dados...</div>';
                 
                 // URL absoluta com cache busting
-                const csvUrl = `${BASE_URL}/aula05-dados_clientes.csv?t=${Date.now()}`;
+                const csvUrl = `${BASE_URL}/clientes.csv?t=${Date.now()}`;
                 const response = await fetch(csvUrl);
                 
                 if (!response.ok) {
