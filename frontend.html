@@ -146,15 +146,15 @@
             <div class="status">Selecione uma visualização acima</div>
         </div>
 
-        <div class="tabela-container" id="tabelaContainer">
+        <div class="tabela-container" id="tabelaContainerClientes">
             <div class="status">Clique em "Clientes" para ver as informações</div>
         </div>
 
-	<div class="tabela-container" id="tabelaContainer">
+	<div class="tabela-container" id="tabelaContainerCampanhas">
             <div class="status">Clique em "Campanhas" para ver as informações</div>
         </div>
 
-	<div class="tabela-container" id="tabelaContainer">
+	<div class="tabela-container" id="tabelaContainerTrasacoes">
             <div class="status">Clique em "Transações" para ver as informações</div>
         </div>
 	    
@@ -165,23 +165,24 @@
         const BASE_URL = window.location.origin;
         
         async function carregarCSV() {
-            const container = document.getElementById('tabelaContainer');
-            try {
-                container.innerHTML = '<div class="status">Carregando dados...</div>';
-                
-                // URL absoluta com cache busting
-                const csvUrl = `${BASE_URL}/clientes.csv?t=${Date.now()}`;
-                const response = await fetch(csvUrl);
-                
-                const csvUrl = `${BASE_URL}/campanhas.csv?t=${Date.now()}`;
-                const response = await fetch(csvUrl);
+        const expectedHeadersClientes = [
+		'cliente_id', 'idade', 'cidade', renda_mensal', 'tipo_cliente',
+		'ultima_compra', 'frequencia_compras', 'total_gasto'
+	];
 
-                 const csvUrl = `${BASE_URL}/transacoes.csv?t=${Date.now()}`;
-                const response = await fetch(csvUrl);
+	const expectedHeadersCampanhas = [
+		'campanha_id', 'nome_campanha', 'custo_campanha', 
+		'alcance', 'conversao'
+	];
 
-                if (!response.ok){
-                   throw new Error(`Erro ${response.status}: ${response.statusText} `);
-		}
+	const expectedHeadersTransacoes = [
+		'transacao_id', 'cliente_id', 'data_compra', 
+		'valor_compra', 'meio_pagamento', 'campanha'
+	];
+
+         if (!response.ok){
+             throw new Error(`Erro ${response.status}: ${response.statusText} `);
+	}
 
                 // Decodificação segura
                 const buffer = await response.arrayBuffer();
