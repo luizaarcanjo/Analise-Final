@@ -239,17 +239,26 @@
 
         function formatarCelula(valor, cabecalho) {
             try {
-                const formatadores = {
+                const formatadoresClientes = { // Corrigido: Nome da variável e escopo
                     'cliente_id': v => `#${v.padStart(4, '0')}`,
                     'idade': v => `${v} anos`,
-                    'renda_anual': v => new Intl.NumberFormat('pt-BR', {
+                    'renda_mensal': v => new Intl.NumberFormat('pt-BR', {
                         style: 'currency',
                         currency: 'BRL'
                     }).format(v),
-                    'satisfacao_qualidade': v => `${parseFloat(v).toFixed(1)} ⭐`,
-                    'preferencia_frete_gratis': v => v === '1' ? '✅ Sim' : '❌ Não'
-                };
-                return formatadores[cabecalho]?.(valor) || valor;
+	            'cidade': v =>`${v}`,
+		    'tipo_cliente': v => `${v}`, 
+                    'ultima_compra': v => new Intl.NumberFormat('pt-BR', { // Formatar como moeda
+			    style: 'currency',
+                            currency: 'BRL'
+		    }).format(v),
+                    'frequencia_compras': v => `${v} vezes`, // Ex: "25 vezes"
+                    'total_gasto': v => new Intl.NumberFormat('pt-BR', {
+			    style: 'currency',
+			    currency: 'BRL'
+		    }).format(v)
+		};
+                return formatadoresClientes[cabecalho]?.(valor) || valor; // Corrigido: Nome da variável
             } catch (error) {
                 return `<span style="color:red">${valor}</span>`;
             }
@@ -259,6 +268,70 @@
             return a.length === b.length && a.every((v, i) => v === b[i]);
         }
 
+	function formatarCelula(valor, cabecalho) {
+            try {
+                const formatadoresCampanhas = { // Corrigido: Nome da variável e escopo
+                    'campanha_id': v => `#${v.padStart(2, '0')}`,
+                    'nome_campanha': v => `${v}`,
+                    'custo_campanha': v => new Intl.NumberFormat('pt-BR', {
+                        style: 'currency',
+                        currency: 'BRL'
+                    }).format(v),
+	            'alcance': v => `${Number(v).toLocaleString('pt-BR', { maximumFractionDigits: 0 })} pessoas`,
+                    'coversao': v => `${(parseFloat(v) * 100).toFixed(2)}%`
+		};
+                return formatadoresClientes[cabecalho]?.(valor) || valor; // Corrigido: Nome da variável
+            } catch (error) {
+                return `<span style="color:red">${valor}</span>`;
+            }
+        }
+
+	function formatarCelula(valor, cabecalho) {
+            try {
+                const formatadoresTransaçõess = { // Corrigido: Nome da variável e escopo
+                    'campanha_id': v => `#${v.padStart(5, '0')}`,
+                    'cliente_id': v => `#${v.padStart(4, '0')}`,
+                    'data_compra': v => {
+                         const data = new Date(v);
+                         if (isNan(data.getTime())) {
+                             return `<span style="color:red">Data Inválida</span>`; // Tratar datas inválidas  
+			 }
+			 return data.toLocaleDateString('pt-BR'); // Formatar como data brasileira
+		    },
+		    'valor_compra': v => new Intl.NumberFormat('pt-BR', {
+                        style: 'currency',
+                        currency: 'BRL'
+                    }).format(v),
+	            'meio_pagamento': v => {
+			const opcoes = {
+			    'cartão': 'Cartão',
+			    'boleto': 'Boleto',
+			    'pix': 'Pix'
+			};
+			return opcoes[v.toLowerCase()] || `<span style="color:red">${v}</span>`; // Traduzir e tratar valores desconhecidos
+                   },
+                    'campanha': v => {
+        const opcoes = {
+            'sem_campanha': 'Sem Campanha',
+            'dia_pais': 'Dia dos Pais',
+            'dia_maes': 'Dia das Mães',
+            'volta_as_aulas': 'Volta às Aulas',
+            'ano_novo': 'Ano Novo',
+            'black_friday': 'Black Friday',
+            'natal': 'Natal'
+        };
+        return opcoes[v.toLowerCase()] || `<span style="color:red">${v}</span>`; // Traduzir e tratar valores desconhecidos
+    }
+};
+        return formatadoresTransações[cabecalho]?.(valor) || valor; // Corrigido: Nome da variável
+            } catch (error) {
+                return `<span style="color:red">${valor}</span>`;
+            }
+        }
+	    
+        function arraysIguais(a, b) {
+            return a.length === b.length && a.every((v, i) => v === b[i]);
+        }
 		function carregarImagem(tipo) {
 			const container = document.getElementById('imagemContainer');
 			const imgUrl = `${tipo}.png?t=${Date.now()}`; // Usando caminho relativo
